@@ -1,0 +1,125 @@
+html{
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+[class*="col-"]{
+    float: left;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to right, green, white, green);
+}
+
+body img{
+    width: 40%;
+    height: auto;
+}
+
+header{
+    background-image: url(../images/pokeball.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+
+main{
+    border-radius: 15px;
+    border: 5px solid black;
+    padding: 1rem 0.5rem;
+    background-color: steelblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    border-radius: 0.5rem;
+}
+
+tr, td, th, table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+tr:nth-child(even){
+    background-color: lightyellow;
+}
+
+tr:nth-child(odd){
+    background-color: lightsteelblue;
+}
+
+th, #cabezal{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+}
+
+#cabezal{
+    background-color: tan;
+}
+
+td{
+    text-align: end;
+}
+
+section{
+    margin: 0.4rem 0.2rem;
+}
+
+span{
+    padding: 5px;
+    border-radius: 1rem;
+    border: 2px solid white;
+    font-family: sans-serif;
+}
+
+#planta{
+    background-color: #206935;
+    color: white;
+}
+
+#veneno{
+    background-color: #553355;
+    color: white;
+}
+
+.pokemon{
+    border-radius: inherit;
+    background-color: white;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    font-size: 0.7rem;
+}
